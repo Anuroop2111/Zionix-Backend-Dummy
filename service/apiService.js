@@ -1223,23 +1223,23 @@ const cleanDataFunction = async (
 
       return result;
 
-    case "database distributer":
-      // for each record, send the record to the cleanDatabase function which finds the pricebreaks and get the correct price value.
-      for (const record of data) {
-        try {
-          const cleanedData = await dataClean.cleanDatabase(
-            record,
-            quantity,
-            conversion_from_usd
-          );
-          // console.log("cleaned data : ",cleanedData);
-          result.push(cleanedData);
-        } catch (error) {
-          console.log("Error in Database clean : ", error);
-        }
-      }
-      // console.log("Result : ",result);
-      return result;
+    // case "database distributer":
+    //   // for each record, send the record to the cleanDatabase function which finds the pricebreaks and get the correct price value.
+    //   for (const record of data) {
+    //     try {
+    //       const cleanedData = await dataClean.cleanDatabase(
+    //         record,
+    //         quantity,
+    //         conversion_from_usd
+    //       );
+    //       // console.log("cleaned data : ",cleanedData);
+    //       result.push(cleanedData);
+    //     } catch (error) {
+    //       console.log("Error in Database clean : ", error);
+    //     }
+    //   }
+    //   // console.log("Result : ",result);
+    //   return result;
   }
 };
 

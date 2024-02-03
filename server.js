@@ -7,7 +7,7 @@ const { Server } = require('socket.io');
 
 const cors = require('cors');
 const config = require('./config/config');
-const db = require("./database");
+// const db = require("./database");
 const mdb = require('./MongoDatabase');
 const cookieParser = require('cookie-parser');
 
@@ -199,18 +199,18 @@ app.use('/result', dataValueController);
 app.use("/authenticate",authController);
 
 
-const initDb = async () =>{
-  console.log("Initialising DB connection");
+// const initDb = async () =>{
+//   console.log("Initialising DB connection");
 
-  try{
-    await db.authenticate();
-    console.log("Connection has been established successfully.");
-  } catch(error){
-    console.log("Error in db connection: ",error);
-  }
-}
+//   try{
+//     await db.authenticate();
+//     console.log("Connection has been established successfully.");
+//   } catch(error){
+//     console.log("Error in db connection: ",error);
+//   }
+// }
 
-initDb();
+// initDb();
 
 mdb.mong();
 
