@@ -20,8 +20,8 @@ const setCookie = async (res, userId) => {
     res.cookie("exeb2b-cookie", valueString, {
       expires: new Date(Date.now() + 86400000),
       path: "/",
-      sameSite: "lax",
-      secure: false,
+      sameSite: "None",
+      secure: true,
     });
     return "Cookie successful";
   } catch (e) {
