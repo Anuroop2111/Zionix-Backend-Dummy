@@ -25,7 +25,7 @@ const authController = require("./controller/authController");
 const port = config.port;
 
 const corsOptions = {
-  origin:["http://127.0.0.1:5173", "http://localhost:5173","https://65be7a21f775d9b46b9d7e65--startling-flan-939b08.netlify.app"], 
+  origin:["http://127.0.0.1:5173", "http://localhost:5173","https://65be7c5fccf320b918db2b2b--aesthetic-sunflower-2ef692.netlify.app"], 
   credentials:true,            //access-control-allow-credentials:true
   optionSuccessStatus:200
 }
@@ -39,7 +39,7 @@ const server = http.createServer(app);
 
 const io = new Server(server,{
   cors: {
-    origin: ["http://127.0.0.1:5173", "http://localhost:5173","https://65be7a21f775d9b46b9d7e65--startling-flan-939b08.netlify.app"],
+    origin: ["http://127.0.0.1:5173", "http://localhost:5173","https://65be7c5fccf320b918db2b2b--aesthetic-sunflower-2ef692.netlify.app"],
     methods: ['GET','POST'],
     credentials: true,
   },

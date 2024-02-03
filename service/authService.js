@@ -22,7 +22,7 @@ const setCookie = async (res, userId) => {
       path: "/",
       sameSite: "None",
       secure: true,
-      domain: "https://65be7a21f775d9b46b9d7e65--startling-flan-939b08.netlify.app/"
+      domain: "https://65be7c5fccf320b918db2b2b--aesthetic-sunflower-2ef692.netlify.app"
     });
     return "Cookie successful";
   } catch (e) {
