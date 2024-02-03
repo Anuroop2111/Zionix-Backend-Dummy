@@ -25,6 +25,7 @@ router.post('/login', async (req,res) => {
 
         if (responseStatus.status === "valid"){
             const cookieFlag = await authService.setCookie(res, userId);
+            console.log("CookieFlag = ",cookieFlag);
 
             if (cookieFlag){
                 res.status(200).json({success: true, message : "valid"}); // User valid
